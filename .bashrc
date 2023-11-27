@@ -214,6 +214,7 @@ alias ls="ls -Ah"
 alias vi="vim"
 alias devenv="docker start -i erctd-dev"
 alias dv="cd //wsl.localhost/docker-desktop-data/data/docker/volumes"
-alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias config="git       --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias lgconfig="lazygit --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 

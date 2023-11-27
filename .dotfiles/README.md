@@ -176,35 +176,5 @@ This explanation can be confusing, because in @durdn’s tutorial we add a worki
 
 2. Broader definitions work in different contexts. In common dev parlance, we talk about “pushing up your work to the repo”. Here, “repo” refers to the main remote repository. Repo commonly refers to all the code controlled by Git, i.e the whole project folder including the work tree.
 
-Other posts by Ackama:
-Breccan Mcleod-Lundy
-Reflections on the Australian Clean Energy Summit 2023
-Breccan McLeod-Lundy
-August 15, 2023
-Having experienced Ackama’s increasing involvement in energy-related work over the last few years, I attended the Clean Energy Summit in Sydney this month. As a New Zealander, it was a great opportunity to compare and contrast my knowledge…
-
-Read more
-
-The importance of the Discovery Phase in creating purposeful experiences
-Josh Ng
-July 7, 2023
-When it comes to designing and developing a product, starting the project off on the right foot is crucial. The Discovery phase sets the stage by uncovering key insights about the product’s purpose, target audience, and…
-
-Read more
-What we do
-Case Studies
-Capabilities
-Who we are
-Our Story
-Our Team
-What we think
-Blog
-Say hello
-Contact
-Careers
-Follow us:
-Find us on twitter Find us on linkedin Find us on github
-Flag of the Aboriginal Australians Flag of the Torres Strait Islanders
-Ackama acknowledges the Wurundjeri and Boonwurrung people as the Traditional Owners of the lands on which our offices are located, and the Traditional Owners of Country throughout Australia. We recognise that sovereignty over the land has never been ceded, and pay our respects to Elders past, present and emerging.
-
-Ackama Logo
+HOW TO ADD FETCH FOR BARE REPO
+    config config remote.origin.fetch 'refs/heads/*:refs/heads/*'
