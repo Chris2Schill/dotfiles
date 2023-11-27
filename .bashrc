@@ -49,5 +49,5 @@ fi
 #    . /etc/bash_completion
 #fi
 
-alias config='git       --git-dir=/root/.cfg --work-tree=/root'
+alias config='git       --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias lgconfig="lazygit --git-dir=$HOME/.cfg/ --work-tree=$HOME"
