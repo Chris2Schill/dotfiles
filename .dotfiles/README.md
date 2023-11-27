@@ -178,3 +178,7 @@ This explanation can be confusing, because in @durdn’s tutorial we add a worki
 
 HOW TO ADD FETCH FOR BARE REPO
     config config remote.origin.fetch 'refs/heads/*:refs/heads/*'
+    OR ADD to CONFIG
+    [remote "origin"]
+        fetch = +refs/*:refs/*
+        mirror = true
