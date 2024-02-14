@@ -24,7 +24,15 @@ local lazygit = Terminal:new(
         cmd = "lazygit",
         direction = "float",
         hidden = true,
-        count = 10
+        count = 10,
+        float_opts = {
+            width = function()
+                return math.floor(vim.o.columns * 0.6)
+            end,
+            height = function()
+                return math.floor(vim.o.lines * 0.9)
+            end,
+        }
     }
 )
 

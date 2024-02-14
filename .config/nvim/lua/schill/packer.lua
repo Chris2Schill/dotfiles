@@ -50,7 +50,19 @@ return require('packer').startup(function(use)
   use('preservim/nerdtree')
   use('brooth/far.vim')
   use('christoomey/vim-tmux-navigator')
+
+  use {
+    requires = { "nvim-treesitter/nvim-treesitter" },
+    "Badhi/nvim-treesitter-cpp-tools",
+}
   -- use{'famiu/feline.nvim', branch = '0.5-compat'}
+
+  -- use {
+  --     'Vonr/align.nvim',
+  --     branch = "v2"
+  -- }
+  use {'echasnovski/mini.align'}
+
   use {
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }

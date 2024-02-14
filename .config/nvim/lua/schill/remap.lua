@@ -38,6 +38,11 @@ vim.keymap.set("n", "<leader><leader>h", "<c-w>v:A<cr>")
 
 vim.keymap.set("n", "<c-s>", ":w<cr>")
 
+
+
+vim.keymap.set("n", "cp", ":let @\" = expand(\"%\")<cr>")
+-- vim.keymap.set("n", "<c-[>", "vi{")
+
 vim.cmd [[packadd! vimspector]]
 
 --vim.cmd([[ silent! execute "set <M-v>=\<Esc>v" ]])

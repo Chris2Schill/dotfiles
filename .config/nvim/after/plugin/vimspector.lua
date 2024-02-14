@@ -13,7 +13,7 @@ vim.cmd [[packadd! vimspector]] -- Load vimspector
 vim.cmd("let g:vimspector_base_dir='/root/.local/nvim-data/site/pack/packer/start/vimspector'")
 
 vim.keymap.set("n", "<leader>dl", ":call vimspector#Launch()<cr>")
-vim.keymap.set("n", "<leader>r", ":call vimspector#Launch()<cr>")
+-- vim.keymap.set("n", "<leader>r", ":call vimspector#Launch()<cr>")
 vim.keymap.set("n", "<leader>dr", ":call vimspector#Restart()<cr>")
 vim.keymap.set("n", "<leader>dq", ":call vimspector#Reset()<cr>")
 vim.keymap.set("n", "<leader>dc", ":call vimspector#Continue()<cr>")
