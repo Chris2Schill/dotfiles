@@ -15,3 +15,17 @@ vim.keymap.set('n', '<a-f>', function()
     local current_word = vim.call('expand', '<cword>');
 	builtin.grep_string({search = current_word});
 end)
+
+
+local actions = require("telescope.actions")
+require("telescope").setup({
+    defaults = {
+        mappings = {
+            i = {
+                ["<esc>"] = actions.close,
+
+            }
+        }
+    }
+})
+
