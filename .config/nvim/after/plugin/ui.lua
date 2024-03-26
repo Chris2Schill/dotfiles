@@ -1,16 +1,3 @@
--- local function currentProject()
---     return "Project:"..vim.g["CURRENT_PROJECT"]
--- end
---
--- local function currentConfiguration()
---     return vim.g["CURRENT_CONFIGURATION"]
--- end
-
--- local custom_gruvbox = require'lualine.themes.gruvbox'
--- custom_gruvbox.normal.c.bg = '#111111'
--- custom_gruvbox.insert.c.bg = '#111111'
--- custom_gruvbox.command.c.bg = '#111111'
--- custom_gruvbox.visual.c.bg = '#111111'
 local colors = {
   black        = '#282828',
   white        = '#ebdbb2',
@@ -26,7 +13,8 @@ local colors = {
   inactivegray = '#7c6f64',
   disabled     = '#111111',
 }
-local custom =  {
+
+local lualine_colorscheme =  {
   normal = {
     a = {bg = colors.purple, fg = colors.black, gui = 'bold'},
     b = {bg = colors.darkgray, fg = colors.white},
@@ -62,9 +50,8 @@ local custom =  {
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = custom,
+    theme = lualine_colorscheme,
     component_separators = { left = '|', right = '|'},
-    -- section_separators = { left = '', right = ''},
     section_separators = { left = ' ', right = '|'},
     disabled_filetypes = {
       statusline = {},
@@ -83,7 +70,7 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    lualine_x = {'g:CURRENT_PROJECT', 'g:CURRENT_CONFIGURATION','g:exe',--[['encoding', 'fileformat', --]] 'filetype'},
+    lualine_x = {'g:workspace_current_project', 'g:workspace_current_configuration','g:workspace_current_target',--[['encoding', 'fileformat', --]] 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },

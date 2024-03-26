@@ -10,7 +10,7 @@ end
 
 --M.toggle_human_mode()
 vim.cmd [[packadd! vimspector]] -- Load vimspector
-vim.cmd("let g:vimspector_base_dir='/root/.local/nvim-data/site/pack/packer/start/vimspector'")
+-- vim.cmd("let g:vimspector_base_dir='/home/cschilling/.local/nvim/site/pack/packer/start/vimspector'")
 
 vim.keymap.set("n", "<leader>dl", ":call vimspector#Launch()<cr>")
 -- vim.keymap.set("n", "<leader>r", ":call vimspector#Launch()<cr>")

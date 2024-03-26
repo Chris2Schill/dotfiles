@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/mini.align",
     url = "https://github.com/echasnovski/mini.align"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/nerdtree",
