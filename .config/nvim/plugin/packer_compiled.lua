@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["compiler-explorer.nvim"] = {
+    loaded = true,
+    path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/compiler-explorer.nvim",
+    url = "https://github.com/krady21/compiler-explorer.nvim"
+  },
   ["far.vim"] = {
     loaded = true,
     path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/far.vim",
@@ -225,11 +230,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/vim-dispatch",
     url = "https://github.com/tpope/vim-dispatch"
-  },
-  ["vim-dispatch-neovim"] = {
-    loaded = true,
-    path = "/home/cschilling/.local/share/nvim/site/pack/packer/start/vim-dispatch-neovim",
-    url = "https://github.com/radenling/vim-dispatch-neovim"
   },
   ["vim-fugitive"] = {
     loaded = true,

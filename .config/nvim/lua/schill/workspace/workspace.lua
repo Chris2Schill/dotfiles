@@ -141,7 +141,7 @@ function RunTermHorizontal(exe, cwd)
         }):open()
 end
 
-function RunFloating(exe, cwd)
+function RunTermFloating(exe, cwd)
     Terminal:new(
         {
             cmd = "./" .. exe,
@@ -307,6 +307,46 @@ end, {})
 local function setup(workspace)
     Workspace = workspace
 end
+
+--
+-- function ToggleQuickfix()
+--   local qf_exists = false
+--   for _, win in pairs(vim.fn.getwininfo()) do
+--     if win["quickfix"] == 1 then
+--       qf_exists = true
+--     end
+--   end
+--   if qf_exists == true then
+--     vim.cmd "cclose"
+--     return
+--   end
+--   if not vim.tbl_isempty(vim.fn.getqflist()) then
+--     vim.cmd "copen"
+--   end
+-- end
+
+-- local ToggleQuickfix = vim.api.nvim_exec2([[
+--     function! ToggleQuickFix()
+--       if getqflist({'winid':0}).winid
+--          cclose 
+--       else
+--          copen
+--       endif
+--     endfunction
+--
+--     call ToggleQuickfix()
+-- ]],
+-- {silent = true}
+-- )
+--
+-- function ToggleQuickFix2()
+--
+-- end
+--
+
+
+vim.keymap.set("n", "<leader>co", ":Copen<cr>")
+vim.keymap.set("n", "<leader>cc", ":ccl<cr>")
 
 return {
     setup = setup,

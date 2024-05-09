@@ -54,6 +54,10 @@ local workspace = {
                     cmd = "content_server_test",
                     cwd = "aar/viewer/core",
                 },
+                ["erctd_api"] = {
+                    cmd = "erctdapi",
+                    cwd = "database_api",
+                },
             }
 
         },

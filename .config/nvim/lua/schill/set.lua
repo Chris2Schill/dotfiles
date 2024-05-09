@@ -27,7 +27,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
---vim.opt.timeoutlen = 50
+--vim.opt.timeoutlen = 5
 vim.opt.colorcolumn = "0"
 
 vim.api.nvim_create_autocmd("BufEnter", { callback = function() vim.opt.formatoptions = vim.opt.formatoptions - {"c","r","o" } end, })

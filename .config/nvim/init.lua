@@ -54,6 +54,7 @@ vim.cmd("packadd vimspector")
 vim.cmd("highlight Normal guibg=none ctermbg=none")
 vim.cmd("highlight NonText guibg=none")
 
+
 vim.opt.mouse = "a"
 
 -- vim.keymap.set("n", "<c-p>", function() vim.cmd('echo "world"') end, {})

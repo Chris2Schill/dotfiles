@@ -50,7 +50,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-repeat')
   use('tpope/vim-fugitive')
   use('tpope/vim-dispatch')
-  use('radenling/vim-dispatch-neovim')
   use('akinsho/toggleterm.nvim')
   --use('voldikss/vim-floaterm')
   use('vim-scripts/a.vim')
@@ -61,7 +60,7 @@ return require('packer').startup(function(use)
   use {
     requires = { "nvim-treesitter/nvim-treesitter" },
     "Badhi/nvim-treesitter-cpp-tools",
-}
+  }
   -- use{'famiu/feline.nvim', branch = '0.5-compat'}
 
   -- use {
@@ -108,7 +107,8 @@ return require('packer').startup(function(use)
       }
   }
 
-	
+  use {'krady21/compiler-explorer.nvim'}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

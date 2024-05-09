@@ -159,7 +159,7 @@ end
 local function build()
     if configuration ~= nil then
         vim.g.makeprg = "make"
-        vim.cmd(":Make -j10 -C " .. configuration.binaryDir)
+        vim.cmd(":Make! -j10 -C " .. configuration.binaryDir)
     end
 end
 
