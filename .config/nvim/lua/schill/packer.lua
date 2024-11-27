@@ -54,6 +54,13 @@ return require('packer').startup(function(use)
   --use('voldikss/vim-floaterm')
   use('vim-scripts/a.vim')
   use('preservim/nerdtree')
+  -- use {
+  --     'nvim-tree/nvim-tree.lua',
+  --     requires = {
+  --         'nvim-tree/nvim-web-devicons', -- optional
+  --     },
+  --     config = function() require("nvim-tree").setup() end
+  -- }
   use('brooth/far.vim')
   use('christoomey/vim-tmux-navigator')
 

@@ -27,6 +27,29 @@ local workspace = {
             root = "/home/cschilling/AdventOfCode/2023",
             buildSystem = "cargo",
         },
+        ["interview"] = {
+            root = "/home/cschilling/interview",
+            buildSystem = "cmake",
+            configuration_opts = {
+                use_cmake_presets = false,
+            },
+            configurations = {
+                ["debug"] = {
+                    binaryDir = "/home/cschilling/interview",
+                    flags = { "-DCMAKE_BUILD_TYPE=Debug" },
+                },
+                ["release"] = {
+                    binaryDir = "/home/cschilling/interview",
+                    flags = { "-DCMAKE_BUILD_TYPE=Release" },
+                },
+            },
+            targets = {
+                ["interview"] = {
+                    cmd = "interview",
+                    cwd = "."
+                }
+            }
+        },
         ["ERCTD"] = {
             root = "/home/cschilling/erctd",
             buildSystem = "cmake",
@@ -58,6 +81,10 @@ local workspace = {
                     cmd = "erctdapi",
                     cwd = "database_api",
                 },
+                ["cdbgen"] = {
+                    cmd = "cdbgen",
+                    cwd = "hal/cdbgen",
+                },
             }
 
         },
@@ -72,6 +99,16 @@ local workspace = {
                 ["test2"] = {
                     cmd = "test2",
                     cwd = "."
+                }
+            }
+        },
+        ["rtdbg"] = {
+            root = "~/tools/rtdbg",
+            buildSystem = "make",
+            targets = {
+                ["rtdbg"] = {
+                    cmd = "rtdbg",
+                    cwd = "build/linux/src/client",
                 }
             }
         },

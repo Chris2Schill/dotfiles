@@ -1,5 +1,7 @@
 require("schill")
 
+vim.g.python3_host_prog = "/usr/bin/python3"
+
 vim.keymap.set("n", "<leader>vimrc", ":e $XDG_CONFIG_HOME/nvim/init.lua<cr>")
 
 vim.o.background = "dark"
